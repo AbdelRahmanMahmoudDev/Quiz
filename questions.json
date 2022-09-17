@@ -1,0 +1,26 @@
+[
+    {
+        "title": "What is the worst of these?",
+        "answer_1": "Being in debt",
+        "answer_2": "Paying out a mortgage",
+        "answer_3": "Owning a company that's millions in debt",
+        "answer_4": "Pick your poison",
+        "correct": "Pick your poison"
+    },
+    {
+        "title": "What is the best of these?",
+        "answer_1": "Being in love",
+        "answer_2": "Owning a house",
+        "answer_3": "Owning a car",
+        "answer_4": "Being a billionaire",
+        "correct": "Being in love"
+    },
+    {
+        "title": "What is the most important of these?",
+        "answer_1": "Saving banks from bankruptcy",
+        "answer_2": "Climate change",
+        "answer_3": "Taxing the rich",
+        "answer_4": "Saving the oil industry",
+        "correct": "Climate change"
+    }
+]

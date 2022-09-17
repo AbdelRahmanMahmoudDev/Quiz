@@ -1,0 +1,95 @@
+/* Begin globals */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* end globals */
+/* Begin variables */
+:root {
+    --main-color: #ffac00;
+    --back-color: #565353;
+}
+/* End variables */
+.quiz-container {
+    background-color: var(--back-color, #565353);
+    border: 2px solid var(--main-color, #ffac00);
+    border-radius: 6px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 90%;
+    min-height: 500px;
+}
+.quiz-container .title-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.quiz-container .quiz-area div {
+    padding: 15px;
+}
+.quiz-container .quiz-area div:not(:last-child) {
+    border-bottom: 2px solid var(--main-color, #ffac00);
+}
+.quiz-container .quiz-area input[type="Radio"],
+.quiz-container .quiz-area label {
+    cursor: pointer;
+}
+.quiz-container .quiz-area input[type="Radio"]:checked + label {
+    color: #0077ff;
+}
+.quiz-container .submit-area {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+.quiz-container .submit-area .questions-progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.quiz-container .submit-area .questions-progress .questions-count {
+    display: flex;
+    flex-flow: row wrap;
+}
+.quiz-container .submit-area .questions-progress .questions-count div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid black;
+}
+.quiz-container .submit-area .questions-progress .questions-count .current {
+    background-color: var(--main-color, #ffac00);
+}
+.quiz-container .submit-area .questions-progress .questions-count .correct {
+    background-color: #00ff00;
+}
+.quiz-container .submit-area .questions-progress .questions-count .wrong {
+    background-color: #ff0000;
+}
+.quiz-container .submit-area .questions-progress .clock {
+    font-size: 35px;
+}
+.quiz-container .submit-area button {
+    border: none;
+    padding: 15px;
+    background-color: var(--main-color, #ffac00);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
